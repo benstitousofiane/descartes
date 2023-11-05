@@ -1,7 +1,7 @@
 # descartes🃏
 Application de flashcard avec entrée utilisateurs
 
-#Prérequies :
+# Prérequis :
 - avoir un serveur Apache et Mysql comme XAMPP
 - Importez descartes.sql depuis un utilitaire comme PHPmyAdmin ou à la main
 - avoir NodeJS
