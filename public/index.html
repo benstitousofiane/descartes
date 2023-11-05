@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesCartes</title>
+</head>
+<body>
+    <header>
+        <h1>DesCartes🃏 - Développée par Benstitou Sofiane 🙈</h1>
+    </header>
+
+    <main>
+        <h1>Bienvenue sur DesCartes🃏➡️🧠, choisissez une session de flashcards</h1><br>
+        <a class="center" href="pages/deckmaker.html">📜✍️ Ajouter un nouveau ✨deck✨</a><br>
+        <h2>Vos jeux de cartes</h2>
+        <hr>
+        <!-- afficher les decks depuis la base de données
+        les cartes sont connecter aux decks -->
+        
+        <div id="decksList">
+            <!-- <form action="">
+                <a href="#lol" onclick="this.parentNode.submit();"><h4 style='background-color : #9a4ae5; padding: 0px 100px 0px 100px; border-radius: 5px; color: #171716;'>nom : lol</h4> <h4 style='background-color : #9a4ae5; padding: 0px 100px 0px 100px; border-radius: 5px; color: #171716'>auteur : author</h4> </a>
+            </form> -->
+        </div>
+    </main>
+
+    <footer>
+        <h2 title="Meilleur que Anki 🫢">Site libre de droit⭐</h2>
+        <h2>
+             | <a href="https://github.com/benstitousofiane/descartes" target="_blank">code source</a> | <a href="https://fr.wikipedia.org/wiki/Ren%C3%A9_Descartes" target="_blank">Qui est René Descartes ?</a></footer>
+        </h2>
+
+    <script>
+        fetch("/decks")
+        .then(response => response.json())
+        .then(decks => {
+            console.log(decks); // Ajoutez cette ligne pour afficher les données dans la console
+            const decksList = document.getElementById("decksList");
+            deckElement = document.createElement("h2");
+            deckElement.innerHTML = decks;
+            decksList.appendChild(deckElement);
+            // decks.forEach(deck => {
+            // const deckElement = document.createElement("h2");
+            // deckElement.textContent = deck.name;
+            // decksList.appendChild(deckElement);
+            // });
+        });
+    </script>
+</body>
+</html>
