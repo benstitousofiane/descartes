@@ -30,9 +30,14 @@ app.get("/decks", (request, response) =>{
             console.log("Decks lu✅");
             const formatedResults = results.map(result =>{
                 return `
-                    <form action="">
-                        <a href="#lol" onclick="this.parentNode.submit();"><h4 style='background-color : #9a4ae5; padding: 0px 100px 0px 100px; border-radius: 5px; color: #171716;'>nom : ${result.name}</h4> <h4 style='background-color : #9a4ae5; padding: 0px 100px 0px 100px; border-radius: 5px; color: #171716'>auteur : ${result.author}</h4> </a>
-                    </form>`;
+                <div id="decksList">
+                    <form id="formDecksList" action="">
+                        <h4>nom : ${result.name}</h4>
+                        <h4>auteur : ${result.author}</h4>
+                        <a href="#lol" onclick="this.parentNode.submit();" title="Modifier/ajouter des cartes">✏️</a>
+                    </form>
+                </div>
+            `;
             });
             formatedResponse = formatedResults.join("");
             response.json(formatedResponse);

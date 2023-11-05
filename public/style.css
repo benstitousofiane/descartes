@@ -45,19 +45,19 @@ main h1{
 main a{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
     text-decoration: none;
     background-color: #673299;
     color: white;
     font-size: 25px;
-    padding: 10px;
     border-radius: 5px;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;   
+    color: #171716; 
 }
 
 main a.center{
     text-align: center;
     margin: 0px 400px 0px 400px;
+    padding: 10px 0 10px 0;
 }
 
 main hr{
@@ -88,6 +88,30 @@ main form input[type=submit]{
 
 main div#decksList a{
     border-radius: 30px;
+}
+
+main div#decksList{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #673299;
+    border-radius: 30px;
+}
+
+main div#decksList form#formDecksList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main div#decksList form#formDecksList h4{
+    background-color: #9a4ae5;
+    color: #171716;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px
+}
+main div#decksList form#formDecksList a{
+    margin: 0px 10px 0px 10px
 }
 
 
