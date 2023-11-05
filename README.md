@@ -1,5 +1,8 @@
 # descartes🃏
-Application de flashcard avec entrée utilisateurs
+Application de flashcard avec entrées utilisateur
+![image](https://github.com/benstitousofiane/descartes/assets/129552238/c666dcfe-12ac-4396-b8af-7a3f30653025)
+
+
 
 # Prérequis :
 - avoir un serveur Apache et Mysql comme XAMPP
