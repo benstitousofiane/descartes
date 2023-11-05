@@ -26,3 +26,5 @@ Enfin lancer l'app (il sera sur le port 3000) :
 ```
 nodemon
 ```
+
+C'est ma première app avec du nodeJS, soyez indulgeant 🙈
